@@ -1,4 +1,5 @@
 import { Component, Input } from '@angular/core';
+import { ActivatedRoute, Router } from '@angular/router';
 
 @Component({
   selector: 'app-todos',
@@ -7,4 +8,8 @@ import { Component, Input } from '@angular/core';
 })
 export class TodosComponent {
   
+  constructor(private route: ActivatedRoute)
+  {
+
+  }
 }

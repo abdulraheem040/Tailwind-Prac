@@ -1,0 +1,26 @@
+<mat-toolbar class=" text-white " color="primary">
+    <button mat-icon-button routerLink="/Menu">
+      <mat-icon>keyboard_arrow_left</mat-icon>
+    </button>
+    <span class="font-bold text-xl">User</span>
+  </mat-toolbar>
+  <br>
+  <div class="flex flex-col items-center mt-6">
+    <mat-form-field>
+      <mat-label>Enter Name</mat-label>
+      <input matInput >
+    </mat-form-field>
+    <mat-form-field>
+      <mat-label>Enter your password</mat-label>
+      <input matInput [type]="hide ? 'password' : 'text'">
+      <button mat-icon-button matSuffix (click)="hide = !hide" [attr.aria-label]="'Hide password'" [attr.aria-pressed]="hide">
+        <mat-icon>{{hide ? 'visibility_off' : 'visibility'}}</mat-icon>
+      </button>
+    </mat-form-field>
+  </div>
+  <br>
+  <div class="flex justify-center">
+    <button mat-raised-button color="primary" routerLink="/Menu/User/Course">Enroll</button>
+    <button mat-raised-button color="primary" routerLink="/Menu" class="mx-10">Cancel</button>
+  </div>
+  

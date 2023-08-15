@@ -8,20 +8,6 @@ import { CommunicationService } from './communication.service';
 })
 export class AppComponent {
  
-  greet()
-  {
-    alert("Go to Gym Bro!");
-  }
-
-  enroll()
-  {
-    alert('Enrolled successfully!');
-  }
   
-  Trip()
-  {
-    alert('O ja ja tor ja!');
-
-  }
   
 }
