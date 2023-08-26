@@ -31,7 +31,7 @@ export class ChatComponent {
     };
 
     const lowerCaseMessage = userMessage.toLowerCase();
-    return predefinedResponses[lowerCaseMessage] || 'I\'m not sure how to respond to that.';
+    return predefinedResponses[lowerCaseMessage] || 'I\'m Gandu';
   }
 }
 
